@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:gravity="center_horizontal"
+            android:text="Are you sure to logout from poster maker app...?"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_below="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/tv_warning"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/liear_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:text="Cancel"
+                android:background="@drawable/et_bg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_logout"
+                android:text="Logout"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

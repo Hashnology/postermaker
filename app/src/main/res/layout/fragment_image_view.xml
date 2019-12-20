@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:minWidth="36dp"
+            android:minHeight="36dp"
+            android:onClick="onCancelClick"
+            app:srcCompat="@drawable/ic_cancel_white" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutBottom"
+            android:layout_below="@+id/btnCancel">
+
+
+            <View
+                android:id="@+id/centerLine"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/centerLine"
+                android:background="@color/white" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sticker_card_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="@dimen/_4sdp">
+
+                    <com.xiaopo.flying.sticker.StickerView
+                        android:id="@+id/sticker_view"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_360sdp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        app:showBorder="true"
+                        app:showIcons="true">
+
+                        <ImageView
+                            android:id="@+id/main_bg"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_360sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image_place_holder"
+                            />
+                    </com.xiaopo.flying.sticker.StickerView>
+
+                    <ImageView
+                        android:id="@+id/temp_view"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_360sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:gravity="center"
+            android:onClick="onEditClick"
+            >
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_edit"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:onClick="onEditClick"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

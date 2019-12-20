@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_settings"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_cancel" />
+
+        <EditText
+            android:id="@+id/et_link"
+            android:layout_toRightOf="@+id/iv_settings"
+            android:layout_toLeftOf="@+id/iv_paste_link"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_above="@+id/et_password"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@null"
+            android:hint="You can image a link"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <View
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/et_link"
+            android:background="#605e5e"></View>
+        <ImageView
+            android:id="@+id/iv_paste_link"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_link" />
+
+        <ImageView
+            android:background="@drawable/user"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@+id/et_link"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp" />
+
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border"
+            android:text="get followers for me" />
+    </RelativeLayout>
+</RelativeLayout>

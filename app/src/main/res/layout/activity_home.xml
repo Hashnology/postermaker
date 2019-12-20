@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/collageBgView"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:splitMotionEvents="true">
+
+<ImageView
+    android:background="@drawable/mam"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_width="300dp"
+    android:layout_height="450dp" />
+
+        <ImageView
+            android:id="@+id/kata"
+            android:background="@drawable/kata"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.ashu.postermaker.mycollage.CollageView
+            android:visibility="gone"
+            android:id="@+id/collageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mam" />
+
+        <com.ashu.postermaker.mycollage.CollageView
+            android:id="@+id/collageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kata" />
+
+        <TextView
+            android:id="@+id/tv_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POP-UP SALE"
+            android:textColor="#0B1969"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UP TO 80% OFF"
+            android:textColor="#A71F16"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

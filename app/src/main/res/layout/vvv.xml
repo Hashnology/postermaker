@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Folder"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/btn_open_folder"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linelayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="#E02121"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/home_rel"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <ImageView
+                        android:id="@+id/home_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_home"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/home_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Home"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_25sdp" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="#2196F3"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/features_rel"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <ImageView
+                        android:id="@+id/features_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_features"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/features_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_features"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Features"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_25sdp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="#8BC34A"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/categories_rel"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <ImageView
+                        android:id="@+id/category_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_categories"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/category_icon"
+                        android:paddingTop="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_categories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Categories"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_25sdp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="#FF9800"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/templates_rel"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+
+                    <ImageView
+                        android:id="@+id/template_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_template"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/template_icon"
+                        android:paddingTop="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_template"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Templates"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_25sdp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/ic_share"
+            android:padding="@dimen/_5sdp"
+            android:text="Share App"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/rating_icon"
+            android:padding="@dimen/_5sdp"
+            android:text="Rate App"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/more_icon"
+            android:padding="@dimen/_5sdp"
+            android:text="More Apps"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</RelativeLayout>
